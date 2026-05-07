@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saju-agent"
+version = "0.1.0"
+description = "사주(四柱) 8글자 결정론 계산 + 명리학 모듈(대운·신살·용신·궁합) + LLM 풀이 프롬프트 (요약/중간/풀 13단계)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "sajupy>=0.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/alice840126-ship-it/saju-agent"
+
+[tool.setuptools.packages.find]
+include = ["saju*"]
